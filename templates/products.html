@@ -1,0 +1,14 @@
+<body bgcolor="yellow">
+{% block content %}
+
+
+<h1> List of All Product names and reviews given in form </h1>
+
+<br>
+{% for dest in dests %}
+<h2>{{dest.produ_name}}</h2>  <p>&emsp;</p>> <p style="color:rgb(112, 9, 5)">{{dest.review_data}}</p><br> <br> 
+<br>
+<hr>
+{% endfor %}
+{% endblock %}
+</body>
